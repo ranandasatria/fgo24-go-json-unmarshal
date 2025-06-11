@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strings"
 )
 
 var baseURL = "https://jsonplaceholder.typicode.com"
@@ -53,7 +54,7 @@ func main() {
 	}
 
 	for _, each := range users {
-		fmt.Printf("%v\n Name: %v \n Email: %v \n Company: %v \n", each.ID, each.Name, each.Email, each.Company)
+		fmt.Printf("%v\n Name: %v \n Email: %v \n Company: \n  \t Name: %v \n \t Catchphrase: %v \n \t Bs: %v \n", each.ID, each.Name, strings.ToLower(each.Email), each.Company.Name, each.Company.CatchPhrase, each.Company.Bs)
 	}
 
 }
