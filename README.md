@@ -11,14 +11,12 @@ Make sure you have Golang installed on your device.
 
 #### 1. Clone the repository
 ```
-git clone https://github.com/ranandasatria/fgo24-go-json-unmarshall
-.git
+git clone https://github.com/ranandasatria/fgo24-go-json-unmarshal.git
 ```
 
 #### 2. Navigate into the project directory
 ```
-cd fgo24-go-json-unmarshall
-
+cd fgo24-go-json-unmarshal
 ```
 
 #### 3. Run the program
