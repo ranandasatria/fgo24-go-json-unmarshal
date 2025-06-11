@@ -8,10 +8,17 @@ import (
 
 var baseURL = "https://jsonplaceholder.typicode.com"
 
+type Company struct {
+	Name string
+	CatchPhrase string
+	Bs string
+}
+
 type User struct {
 	ID    int
 	Name  string
 	Email string
+	Company Company
 }
 
 func fetchUsers() ([]User, error) {
@@ -46,7 +53,7 @@ func main() {
 	}
 
 	for _, each := range users {
-		fmt.Println(each.Email)
+		fmt.Printf("%v\n Name: %v \n Email: %v \n Company: %v \n", each.ID, each.Name, each.Email, each.Company)
 	}
 
 }
